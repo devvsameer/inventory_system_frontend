@@ -15,8 +15,8 @@ const Body = () => {
          <Route path="/" element={<Navigate to="/products" replace />} />
           <Route index  path='dashboard' element={<ComingSoonPage/>} />
           <Route path='products' element={<ProductPage />} />
-          <Route path='billing' element={<ComingSoonPage/>} />
-          <Route path='invoices' element={<ComingSoonPage/>} />
+          <Route path='billing' element={<BillingsPage />} />
+          <Route path='invoices' element={<InvoicesPage />} />
           <Route path='*' element={<NotFoundPage/>}/>
         </Route>
       </Routes>

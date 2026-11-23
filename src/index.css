@@ -42,3 +42,9 @@
 @utility searchBar{
  @apply  border-2 border-gray-300 rounded-2xl p-1 w-full  
 }
+@media print {
+  body * { visibility: hidden; }
+  #receipt, #receipt * { visibility: visible; }
+  #receipt { position: absolute; inset: 0; padding: 16px; }
+  .no-print { display: none !important; }
+}
